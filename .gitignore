@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignore node_modules directory inside /frontend
+/frontend/node_modules/
