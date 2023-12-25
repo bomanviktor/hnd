@@ -87,19 +87,19 @@ class Dwarf extends Player implements Healer {
         switch (ability.level) {
             case 3:
                 if (this.inRange(pos, 4)) {
-                    target.recieveDamage(5)
+                    target.receiveDamage(5)
                 } else {
                     return
                 }
             case 2: 
                 if (this.inRange(pos, 3)) {
-                    target.recieveDamage(5)
+                    target.receiveDamage(5)
                 } else {
                     return
                 }
             case 1: 
                 if (this.inRange(pos, 2)) {
-                    target.recieveDamage(10)
+                    target.receiveDamage(10)
                     break
                 } else {
                     return

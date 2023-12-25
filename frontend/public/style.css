@@ -1,0 +1,136 @@
+/*
+FOR VOID BG: rgb(135, 18, 135)
+FOR FOREST BG: 
+*/
+
+* {
+    cursor: default;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: rgba(245, 245, 245, 0.899);
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+
+#wrapper {
+    position: absolute;
+    padding-left: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 32, 32, 0.8);
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: dotted;
+    border-color: rgb(0, 26, 128);
+
+    align-items: center;
+
+    padding: 20px;
+    width: 600px;
+    height: 800px;
+
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+#menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 50px;
+    padding-top: 40px;  
+    transition: color 0.1s ease-in; 
+}
+
+#new-game-form {
+    display:flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 50px;
+    margin: 40px 0px 10px;
+}
+
+input {
+    list-style: none;
+    background-color: whitesmoke;
+    color: rgb(33, 32, 32);
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;  
+    padding: 10px;  
+}
+
+#total-players {
+    justify-content: center;
+    align-items: center;
+}
+
+.select-player-amount {
+    margin-right: 30px;
+    appearance: none;
+    background-color: whitesmoke;
+    width: 40px; /* Set the width */
+    height: 40px; /* Set the height */
+    border: 2px solid #333; /* Add a border */
+}
+
+.select-player-amount:checked {
+    background-color: rgb(18, 106, 135);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#difficulty {
+    appearance: none;
+    height: 60px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: grey;
+    background-color: whitesmoke;
+    color: rgb(33, 32, 32);
+}
+
+#create-party-btn {
+    margin-top: 40px;
+    padding: 10px;
+    height: 60px;
+    border-style: none;
+    border-radius: 50px;
+    transition: 0.2s ease-in; 
+}
+
+#create-party-btn:hover {
+    background-color:  rgb(18, 106, 135);
+    color: whitesmoke;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.selectable:hover {
+    color: rgb(18, 106, 135);
+    cursor: pointer;
+}

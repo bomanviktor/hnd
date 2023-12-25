@@ -10,10 +10,10 @@ export abstract class Animal extends Character implements Fighter {
         this.actions = actions
     }
 
-    attack(target: Character, damage: damage) {
-        target.recieveDamage(damage)
+    attack(target: Character, damage: number) {
+        target.receiveDamage(damage)
     }
-    block(amount: damage) {
+    block(amount: number) {
         this.blockAmount = amount
     }
 }
@@ -52,7 +52,7 @@ export class Wolf extends Dog {
             throw new Error(`${this.name} already used bite`)
         }
 
-        target.recieveDamage(10 + this.level * 5)
+        target.receiveDamage(10 + this.level * 5)
         this.used_ability = true
     }
 }

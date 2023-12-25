@@ -8,7 +8,7 @@ export abstract class Friendly extends NonPlayable implements Fighter {
     blockAmount: number
 
     attack(target: Enemy, damage: damage) {
-        target.recieveDamage(damage)
+        target.receiveDamage(damage)
     }
 
     block(amount: number) {

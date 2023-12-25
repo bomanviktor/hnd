@@ -1,6 +1,7 @@
-import { Food } from "./items/food.ts"
-import { Item } from "./items/item.ts"
-import {Stats} from "./stats.ts"
+import { Food } from "./items/food.js"
+import { Item } from "./items/item.js"
+import { Stats } from "./stats.js"
+import { Coordinates, Ability } from "./types"
 
 export abstract class Character {
     readonly name: string
@@ -20,7 +21,7 @@ export abstract class Character {
         this.position = coordinates 
     }
 
-    recieveDamage(amount: damage) {
+    receiveDamage(amount: number) {
         if (this.stats.currentHp - amount <= 0) {
             this.stats.currentHp = 0
             this.die()
@@ -68,7 +69,7 @@ export abstract class Player extends Character implements Fighter {
         this.actions = actions
         this.remainingActions = actions
         this.abilityPoints = 3
-        this.abilities = new Map<string, Ability>
+        this.abilities = new Map()
     }
 
     startTurn() {
@@ -91,15 +92,15 @@ export abstract class Player extends Character implements Fighter {
         }
     }
 
-    attack(target: Character, damage: damage) {
-        target.recieveDamage(damage)
+    attack(target: Character, damage: number) {
+        target.receiveDamage(damage)
     }
 
-    block(amount: damage) {
+    block(amount: number) {
         this.blockAmount = amount
     }
 
-    recieveDamage(amount: damage) {
+    receiveDamage(amount: number) {
         this.stats.currentHp -= amount
         if (this.stats.currentHp <= 0) {
             this.die()
@@ -112,24 +113,24 @@ export abstract class NonPlayable extends Character  {
 }
 
 export interface Trader {
-    buy(player: Player, item: Item, gold: number)
-    sell(player: Player, item: Item)
+    buy(player: Player, item: Item, gold: number): void
+    sell(player: Player, item: Item): void
 }
 
 export interface Fighter {
-    attack(target: Character, damage: damage)
-    block(amount: damage)
+    attack(target: Character, damage: number): void
+    block(amount: number): void
     blockAmount: number
 }
 
 export interface Healer {
-    heal(target: Character, amount: number)
+    heal(target: Character, amount: number): void
 }
 
 export interface Ranger {
-    attack() // No block for rangers
+    attack(): void // No block for rangers
 }
 
 export interface Protector {
-    protect(target: Character)
+    protect(target: Character): void
 }

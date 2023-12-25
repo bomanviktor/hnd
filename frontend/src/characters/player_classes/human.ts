@@ -30,7 +30,7 @@ class Human extends Player implements Healer {
         }
 
         const total_dmg = this.stats.dmg + this.bonusDamage
-        target.recieveDamage(total_dmg)
+        target.receiveDamage(total_dmg)
     }
 
     // Fighter:
@@ -139,7 +139,7 @@ class Human extends Player implements Healer {
         switch (ability.level) {
             case 3: this.heal(this, amount / 2)
             case 2: this.heal(this, amount / 2)
-            case 1: enemy.recieveDamage(amount); break
+            case 1: enemy.receiveDamage(amount); break
             default: return                
         }        
 
@@ -178,19 +178,19 @@ class Human extends Player implements Healer {
         switch (ability.level) {
             case 3:
                 if (this.inRange(pos, 4)) {
-                    target.recieveDamage(5)
+                    target.receiveDamage(5)
                 } else {
                     return
                 }
             case 2: 
                 if (this.inRange(pos, 3)) {
-                    target.recieveDamage(5)
+                    target.receiveDamage(5)
                 } else {
                     return
                 }
             case 1: 
                 if (this.inRange(pos, 2)) {
-                    target.recieveDamage(10)
+                    target.receiveDamage(10)
                     break
                 } else {
                     return

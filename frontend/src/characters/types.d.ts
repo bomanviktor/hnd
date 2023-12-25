@@ -1,11 +1,9 @@
-type Coordinates = {
+export type Coordinates = {
     x: number
     y: number
 }
 
-type Ability = {
+export type Ability = {
     level: number
     used: boolean
 }
-
-type damage = number
