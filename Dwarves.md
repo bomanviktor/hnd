@@ -15,10 +15,10 @@
 <p>Any text that explains the dwarf lore can go here.</p>
 <h2 id="stats">Stats</h2>
 <blockquote>
-<p>Hit points: 20<br>
-Damage: 0<br>
-Special: 6<br>
-Defense: 0<br>
+<p>Hit points: 20 [+2 per level]<br>
+Damage: 1 [+1 per level]<br>
+Special: 1 [+1 per level]<br>
+Defense: 1 [+1 per level]<br>
 Attack range: 1<br>
 Actions: 3</p>
 </blockquote>
