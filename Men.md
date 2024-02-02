@@ -49,7 +49,7 @@ Range: 2</p>
 <h2 id="section"></h2>
 <p><strong>Divine strike:</strong></p>
 <blockquote>
-<p>Deal <strong>[5/8/25]</strong> damage to target. Heal for the same amount.</p>
+<p>Deal <strong>[5/8/13]</strong> damage to target. Heal for the same amount.</p>
 </blockquote>
 <h2 id="section-1"></h2>
 <p><strong>Stars aligned:</strong></p>
@@ -59,7 +59,7 @@ Level 2: … and heal them for <strong>10</strong> HP.<br>
 Level 3: … and give them <strong>1</strong> extra action.</p>
 </blockquote>
 <h2 id="section-2"></h2>
-<p><strong>Solar flare:</strong></p>
+<p><strong>Solar flare (ultimate):</strong></p>
 <blockquote>
 <p>Cast a solar flare from your shield that deals <strong>[40/60]</strong> damage in a straight line.<br>
 Range: infinite</p>
