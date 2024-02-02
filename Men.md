@@ -20,11 +20,11 @@
 <p>Any text that explains the lore of the men can go here.</p>
 <h2 id="stats">Stats</h2>
 <blockquote>
-<p>Hit points: 15<br>
-Damage: 0<br>
-Special: 6<br>
-Defense: 0<br>
-Attack range: 1<br>
+<p>Hit points: 15 [+1 per level]<br>
+Damage: 2 [+1 per level]<br>
+Special: 1 [+1 per level]<br>
+Defense: 1 [+1 per level]<br>
+Attack range: [2 with bow, 1 with sword]<br>
 Actions: 3<br>
 Weapons: Sword / Bow</p>
 </blockquote>
