@@ -1,8 +1,3 @@
----
-
-
----
-
 <h1 id="dwarves">Dwarves</h1>
 <p><strong>Table of contents:</strong></p>
 <ul>
